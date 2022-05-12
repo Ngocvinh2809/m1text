@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>asddassas</p>
+
+    <select id="myselect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <script>
+        var selectedElement = document.getElementById("myselect");
+        selectedElement.addEventListener("change",changeFunction);
+        function changeFunction(){
+            var selectedvalue = document.getElementById('myselect').value;
+            alert(selectedvalue);
+        }
+    </script>
+</body>
+</html>

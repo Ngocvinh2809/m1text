@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+​
+    <button type="button" id="so_1" onclick=" so_1() "> 1 </button>
+    <button type="button" id="so_2" onclick=" so_2() "> 2 </button>
+    <button type="button" id="cong" onclick=" cong() "> + </button>
+    
+    <p id="xuat">
+        <!-- Inner HTML -->
+        <!-- Inner Text -->
+    </p>
+    <input onkeyup=" xu_ly() " type="text" id="inputNumber" value="">
+    <button onclick=" tinh() " >Tính</button>
+​
+    <script>
+        function so_1(){
+            //alert(1);
+            //lấy giá trị của ô input và cộng thêm giá trị mới, sau đó gán lại vào ô input
+            document.getElementById('inputNumber').value = document.getElementById('inputNumber').value + 1;//21
+        }
+        function so_2(){
+            //alert(2)
+            document.getElementById('inputNumber').value += 2;
+        }
+        function cong(){
+            //alert(2)
+            document.getElementById('inputNumber').value += '+';
+        }
+​
+        function tinh(){
+            var number = document.getElementById('inputNumber').value;
+            var ket_qua = eval(number);//1+2 => 3
+​
+            //gán lại giá trị cho ô input
+            document.getElementById('inputNumber').value = ket_qua;
+        }
+        /*
+        is not defined: chưa được định nghĩa
+        missing } after function body: thiếu dấu đóng sau phần thân của hàm
+        */
+        function xu_ly(){
+            //kiem tra da bắt được sự kiện hay chưa
+            //alert(123);
+​
+            //
+            var number = document.getElementById('inputNumber').value;
+            //alert(number);
+​
+            document.getElementById('xuat').innerHTML = '<strong>' + number + '</strong>';
+        }
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

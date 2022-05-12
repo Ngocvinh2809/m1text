@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    background-color: rgba(233, 126, 26, 0.519);
+    color: red;
+    font-size: 30px;
+}
+h5 {
+    color: blue;
+}
+h6 { 
+    color: red;
+}

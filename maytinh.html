@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4"><input type="text" id="number" value="">
+            </td>
+        </tr>
+        <tr>
+            <td> <button onclick="xu_ly_1()">1</button></td>
+            <td> <button onclick="xu_ly_2()">2</button></td>
+            <td> <button onclick="xu_ly_3()">3</button></td>
+            <td> <button onclick="cong()">+</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="xu_ly_4()">4</button></td>
+            <td> <button onclick="xu_ly_5()">5</button></td>
+            <td> <button onclick="xu_ly_6()">6</button></td>
+            <td> <button onclick="tru()">-</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="xu_ly_7()">7</button></td>
+            <td> <button onclick="xu_ly_8()">8</button></td>
+            <td> <button onclick="xu_ly_9()">9</button></td>
+            <td> <button onclick="nhan()">*</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="xu_ly_C()">C</button></td>
+            <td> <button onclick="xu_ly_0()">0</button></td>
+            <td> <button onclick="bang()">=</button></td>
+            <td> <button onclick="chia()">/</button></td>
+        </tr>
+        
+
+    </table>
+</body>
+</html>
+<script>
+    function xu_ly_1() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 1;        
+    }
+    function xu_ly_2() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 2;        
+    }
+    function xu_ly_3() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 3;        
+    }
+    function cong() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + "+"; 
+    }
+    function xu_ly_4() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 4;        
+    }
+    function xu_ly_5() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 5;        
+    }
+    function xu_ly_6() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 6;        
+    }
+    function tru() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + "-";        
+    }
+    function xu_ly_7() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 7;        
+    }
+    function xu_ly_8() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 8;        
+    }
+    function xu_ly_9() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 9;        
+    }
+    function nhan() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + "*"; 
+    }
+    function xu_ly_C() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = "";        
+    }
+    function xu_ly_0() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + 0;        
+    }
+    function bang() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = eval(ketqua);        
+    }
+    function chia() {
+        var ketqua = document.getElementById("number").value;
+            document.getElementById("number").value = ketqua + "/";        
+    }
+</script>

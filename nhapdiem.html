@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="bai1()">bài1</button><br>
+    <button type="button" onclick="bai2()">bài2</button><br>
+    <button type="button" onclick="bai3()">bài3</button><br>
+    <button type="button" onclick="bai4()">bài4</button>
+    <script>
+        function bai1() {
+            var object = prompt("nhập điểm môn Lý");
+            var chemistry = prompt("nhập điểm môn Hóa");
+            var biological = prompt("nhập điểm môn Sinh");
+            var vatly = parseInt(object);
+            var hoa = parseInt(chemistry);
+            var sinh = parseInt(biological);
+            var tbcong = ((vatly + hoa + sinh) / 3);
+            var tong = (vatly + hoa + sinh);
+            document.write("Tbcong:" + tbcong + "<br>" + "Tong:" + tong)
+        }
+        function bai2() {
+            var c = parseInt(prompt("nhập số"));
+            var f = c * 1.8 + 32;
+            document.write("độ C qua F:" + f);
+
+        }
+        function bai3() {
+            var R = parseInt(prompt("nhập bán kính"));
+            var S = R * R * 3.14;
+            document.write("dien tich : " + S)
+        }   
+        function bai4() {
+            var r = parseInt(prompt("nhập bán kính"));
+            var C = r*2*3.14;
+            document.write("chu vi : " + C)
+        }  
+    </script>
+
+</body>
+
+</html>

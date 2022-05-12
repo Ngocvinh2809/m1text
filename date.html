@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="number"  placeholder="nhập số" value="">
+        <input type="button" value="tính số ngày" onclick="on_click()"><br><br>
+    </form>
+
+</body>
+<script>
+    function on_click() {
+        var  number = document.getElementById("number").value;
+        number = parseInt(number)
+        switch (number) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:                   
+                document.write("31 ngày")
+                break;
+            
+            case 4:
+            case 6:
+            case 9:
+            case 11:    
+                document.write("30 ngày")
+                break;
+            case 2:
+                document.write("28 ngày hoặc 29")
+                break;
+            default:
+                break;
+        }
+           
+    }
+</script>
+
+</html>

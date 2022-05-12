@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="bai1()">bài 1</button>
+    <button id="bai2()" onclick="bai2()">bài 2</button>
+    <button onclick="bai3()">bài 3</button>
+    <button onclick="bai1()">bài 1</button>
+    <button onclick="bai1()">bài 1</button>
+    <button onclick="bai1()">bài 1</button>
+    <button onclick="bai1()">bài 1</button>
+    <script>
+        function bai1() {
+            var a = 6;
+            var b = 2;
+            var c = a % b
+            if (c == 0) {
+                document.write('a chia hết cho b')
+            } else {
+                document.write('a không chia hết cho b')
+            }
+        }
+        function bai2() {
+            var tuoi = prompt("nhập số tuổi", '');
+            if (tuoi <16) {
+                document.write('không đủ điều kiện vào lớp 10');
+            }else{
+                document.write('đủ điều kiện vào lớp 10');
+            }
+        }
+        function bai3() {
+            
+        }
+        
+    </script>
+    
+   
+</body>
+
+</html>
